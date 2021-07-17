@@ -1,0 +1,65 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 28px;
+    width: 54px;
+    border: 1px solid #dde3ee;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+  }
+  .logo {
+    padding-bottom: 23.7px;
+    border-bottom: 1px solid #dde3ee;
+    margin-bottom: -8px;
+  }
+  #dropship_logo {
+    width: 100%;
+    display: block;
+  }
+  .logo_img {
+    width: 90%;
+  }
+  .drop-down {
+    width: 100%;
+    padding-top: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .nav_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .list_box {
+    width: 100%;
+    height: 42px;
+    display: block;
+    margin-bottom: 13px;
+    padding-left: 13px;
+  }
+  .list_box-profile {
+    width: 100%;
+    height: 42px;
+    display: block;
+    margin-bottom: 13px;
+    margin-left: 7px;
+  }
+  .list-item {
+    width: 100%;
+    height: 100%;
+  }
+  #list-item--profile {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: 0;
+    background-image: linear-gradient(147deg, #61d5df -3%, #61d5df 101%);
+    padding: 1px;
+    margin-right: 10px;
+  }

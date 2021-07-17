@@ -1,0 +1,66 @@
+.catalog__nav {
+    width: 257px;
+    height: 100vh;
+    background-color: #ecedf5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #dde3ee;
+  }
+  .catalog__nav-form {
+    height: 104px;
+    width: 100%;
+  }
+  .form-text {
+    height: 52px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.73;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 13px;
+    background-color: #5d6b9f;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .dd-list {
+    height: 150px;
+    background-color: #ecedf5;
+    overflow: auto;
+  }
+  .dd-list-item {
+    cursor: pointer;
+    padding: 10px 35px;
+  }
+  .dd-list-item button {
+    border: none;
+    color: #5f5484;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+    background: none;
+  }
+  .dd-list-item:hover {
+    background-color: #dbdff2;
+  }
+  
+  .form-text-category {
+    background-color: #9da9d5;
+    height: 52px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.73;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 13px;
+    position: relative;
+  }
+  .sortdown-first {
+    margin-left: 74px;
+  }
+  .sortdown-second {
+    margin-left: 97px;
+  }
