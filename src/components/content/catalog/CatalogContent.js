@@ -2,6 +2,7 @@ import React from "react";
 import "./CatalogContent.css";
 import Header from "../../header/Header";
 import Sort from "../../header/Sort";
+import Products from "../products/Products";
 
 const CatalogContent = () => {
 
@@ -11,6 +12,7 @@ const CatalogContent = () => {
           <Header />
           <Sort />
       </div>
+      <Products />
     </section>
   );
 };
