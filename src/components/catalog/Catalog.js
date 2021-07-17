@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { getProducts } from '../../API'
+import { productsAPI } from '../../API'
+import { getProductsAction } from '../../actions/ProductsActions';
 
 const Catalog = () => {
     const productList = useSelector(state => state.productList)
@@ -8,16 +9,12 @@ const Catalog = () => {
 
 
     useEffect(() => {
-        getProducts().then(result => {
-            dispatch({
-                type: "PRODUCTS_FETCH",
-                payload: result
-            })
+        productsAPI().then(result => {
+            dispatch(getProductsAction(result));
         })
     }, [])
 
     useEffect(() => {
-        console.log("list is", productList);
     }, [productList])
     return (
         <>
