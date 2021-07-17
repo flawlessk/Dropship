@@ -1,5 +1,6 @@
 import "./MainContent.css";
 import CatalogNav from "../catalogNav/CatalogNav"
+import CatalogContent from "./catalog/CatalogContent";
 
 
 const MainContent = () => {
@@ -9,6 +10,7 @@ const MainContent = () => {
     <div className="main">
       <div className="main__catalog">
         <CatalogNav />
+        <CatalogContent />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { productsAPI } from '../../API'
-import { setProductsAction } from '../../actions/ProductsActions';
+import { productsAPI } from '../../../API'
+import { setProductsAction } from '../../../actions/ProductsActions';
 
 const Catalog = () => {
     const productList = useSelector(state => state.productList)

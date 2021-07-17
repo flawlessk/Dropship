@@ -1,0 +1,21 @@
+.content__sort {
+    width: 100%;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    border-bottom: 1px solid #dde3ee;
+}
+.content__sort label {
+    color: #a8a4a4;
+    padding-left: 50px;
+}
+#sort {
+    margin-left: 10px;
+    padding-right: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #a8a4a4;
+}

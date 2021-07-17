@@ -1,0 +1,10 @@
+.catalog__content {
+    flex: 1 1;
+    height: 100%;
+    width: 100%;
+}
+.content__header-wrapper {
+    height: 120px;
+    width: 100%;
+    border-bottom: 2px solid #dbe0f3;
+}
