@@ -1,3 +1,13 @@
 * {
   box-sizing: border-box;
+  margin: 0 auto;
+}
+.product-div--h2 {
+  padding: 10px;
+}
+.product-div--p {
+  padding: 10px;
+}
+.product-div--img {
+  max-height: 200px;
 }
