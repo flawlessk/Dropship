@@ -3,9 +3,10 @@ import "./SingleProduct.css";
 
 
 
-const SingleProduct = () => {
+const SingleProduct = ({ image, title, id, price, description, item }) => {
     return (
         <Box className="product-box"
+            key={id}
             >
                 <Box item xs={3} 
                  className="products-item" >
@@ -23,12 +24,12 @@ const SingleProduct = () => {
                          value="Add To Cart" 
                          />
                         <div className="products-image">
-                            {/* <img src={image} alt="img" /> */}
+                            <img src={image} alt="img" />
                         </div>
                         <div className="products-info">
                             <div className="products-title">
-                                <h3>title</h3>
-                                <p>description</p>
+                                <h3>{title}</h3>
+                                <p>{description}</p>
                             </div>
                             <h3 className="products-supplier">
                                 <span>By:</span>
@@ -36,7 +37,7 @@ const SingleProduct = () => {
                             </h3>
                         </div>
                         <div className="products-price">
-                            <span>COST price $ </span>
+                            <span>COST {price} $ </span>
                         </div>
                     </Paper>
                 </Box>
