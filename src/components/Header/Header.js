@@ -1,16 +1,25 @@
 import "./Header.css";
 import HeaderBtn from "./Header-btn";
 import Search from "./Search";
+import { useSelector } from "react-redux";
 
-const Header = () => {
-  
+const Header = ({
+  checkedProducts,
+  selectAll,
+  clearAll
+}) => {
+  const productList = useSelector(state => state.ProductsReducer.productList);
+
   return (
     <header className="content__header">
       <div className="header-select">
-        <HeaderBtn name="SELECT ALL"/>
+        <HeaderBtn name="SELECT ALL" onClick={selectAll} />
         <span className="content__header-title">
-          selected 0 out of 0 products
+          selected {checkedProducts.length} out of {productList.length} products
         </span>
+        {checkedProducts.length > 0 && (
+          <HeaderBtn name="CLEAR SELECTED" onClick={clearAll} />
+        )}
       </div>
       <div className="header-side">
           <Search />
