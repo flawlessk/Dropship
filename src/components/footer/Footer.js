@@ -8,7 +8,7 @@ const Footer = () => {
                         <div className="main-info">
                             <div className="main-info-row">
                                 <div className="info-row--box">
-                                    <img src="https://mk0q365dropshipe482k.kinstacdn.com/wp-content/uploads/2020/06/logo.png" />
+                                    <img src="https://mk0q365dropshipe482k.kinstacdn.com/wp-content/uploads/2020/06/logo.png" alt="someimage" />
                                     <br />
                                     <br />
                                     <p> 365DropShip is a wholesale drop shipping business that provides products and order fulfillment.</p>
