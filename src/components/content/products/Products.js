@@ -5,7 +5,10 @@ import CatalogProduct from "./CatalogProduct";
 import Modal from "./modal/Modal";
 
 
-const Products = () => {
+const Products = ({
+  checkedProducts,
+  checkboxChanged
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const history = useHistory();
 
@@ -17,7 +20,10 @@ const Products = () => {
   return (
     <div className="content__products">
       <div id="products-wrapper">
-        <CatalogProduct />
+        <CatalogProduct 
+          checkedProducts={checkedProducts}
+          checkboxChanged={checkboxChanged}
+        />
         <Modal 
             open={isOpen}
             onClose={onClose}

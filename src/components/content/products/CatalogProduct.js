@@ -6,8 +6,11 @@ import { setProductsAction } from '../../../actions/ProductsActions';
 import SingleProduct from './SingleProduct';
 
 
-const CatalogProduct = () => {
-    const productList = useSelector(state => state.productList)
+const CatalogProduct = ({
+    checkedProducts,
+    checkboxChanged
+}) => {
+    const productList = useSelector(state => state.ProductsReducer.productList);
     const dispatch = useDispatch();
 
 
@@ -21,12 +24,15 @@ const CatalogProduct = () => {
         <Grid container justifyContent="space-between">
              {productList && productList.map((item) => 
                 <SingleProduct 
+                key={item.id}
                 id={item.id}
                 image={item.imageUrl}
                 title={item.title}
                 price={item.price}
                 description={item.description}
                 item={item}
+                checkedProducts={checkedProducts}
+                checkboxChanged={checkboxChanged}
                 />
             )
             }
