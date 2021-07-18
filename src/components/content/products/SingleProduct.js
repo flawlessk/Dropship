@@ -1,27 +1,44 @@
-import { Paper , Box } from '@material-ui/core'
 import "./SingleProduct.css";
+import { Paper , Box } from '@material-ui/core';
+import { addToCart } from "../../../API";
 
 
+const SingleProduct = ({ 
+    image, 
+    title, 
+    id, 
+    price, 
+    description,
+    checkedProducts,
+    checkboxChanged  
+}) => { 
 
-const SingleProduct = ({ image, title, id, price, description, item }) => {
     return (
         <Box className="product-box"
             key={id}
             >
                 <Box item xs={3} 
-                 className="products-item" >
+                 className={`${checkedProducts && checkedProducts.includes(id)
+                    ? " products__item--input--highlited"
+                    : "products-item"
+                }`} >
                 <div className="checkbox-container">
                     <input
                     type="checkbox"
                     id="products__item--input"
                     className="products__item--input"
+                    checked={checkedProducts && checkedProducts.includes(id)}
+                    onChange={() => checkboxChanged(id)}
                     />
                 </div>
                     <Paper className="products-paper">
                         <input 
                          type="button" 
                          className="hidden-btn" 
-                         value="Add To Cart" 
+                         value="Add To Cart"
+                         onClick={() => {
+                             addToCart(id, 1)
+                         }}
                          />
                         <div className="products-image">
                             <img src={image} alt="img" />
