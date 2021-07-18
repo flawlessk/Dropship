@@ -1,0 +1,11 @@
+.Register {
+    margin: 20px 40px;
+}
+.Register div {
+    padding: 10px;
+}
+.Register div input {
+    border-color: #61D5DF;
+    border-radius: 5px;
+    padding: 10px;
+}
