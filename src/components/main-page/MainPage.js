@@ -1,3 +1,4 @@
+import Footer from "../footer/Footer"
 import "./MainPage.css"
 
 const MainPage = () => {
@@ -115,6 +116,85 @@ const MainPage = () => {
                     </div>
                 </div>
             </section>
+            <section className="mane-page-section--business">
+                <div className="row">
+                    <div className="row-wrapper">
+                        <div className="row__heading">
+                            <div className="heading__title">
+                                <h2>HOW TO DROPSHIP BUSINESS WORKS?</h2>
+                            </div>
+                            <div className="heading__text">
+                                <p>Browse and select from our catalog. More than thousands of Dropship products available on various niches. 365DROPSHIP product catalog covers an extensive selection from some of the world’s best sellers</p>
+                            </div>
+                        </div>
+                        <div className="row__content">
+                            <div className="flex-start">
+                                <div className="content-top">
+                                    <img src="https://mk0q365dropshipe482k.kinstacdn.com/wp-content/uploads/2020/06/1212.png" alt="social" width="280" height="214" />
+                                </div>
+                                <div className="content-header">
+                                    <h3>JOIN US</h3>
+                                </div>
+                                <div className="content-description">
+                                    "Register to 365"
+                                    <strong className="description-strong">DROPSHIP</strong>
+                                </div>
+                            </div>
+                            <div className="flex-start">
+                                <div className="content-top">
+                                    <img src="https://mk0q365dropshipe482k.kinstacdn.com/wp-content/uploads/2020/06/a-2-1.png" alt="social" width="280" height="214" />
+                                </div>
+                                <div className="content-header">
+                                    <h3>FILL YOUR STORE INVENTORY</h3>
+                                </div>
+                                <div className="content-description">
+                                Choose, manage and sync products from the catalog directly to your online store
+                                </div>
+                            </div>
+                            <div className="flex-start">
+                                <div className="content-top">
+                                    <img src="https://mk0q365dropshipe482k.kinstacdn.com/wp-content/uploads/2020/06/a-3-1.png" alt="social" width="280" height="214" />
+                                </div>
+                                <div className="content-header">
+                                    <h3>GET ORDERS</h3>
+                                </div>
+                                <div className="content-description">
+                                Choose manual or automatic synchronize between your online store orders and your shopping cart
+                                </div>
+                            </div>
+                            <div className="flex-start">
+                                <div className="content-top">
+                                    <img src="https://mk0q365dropshipe482k.kinstacdn.com/wp-content/uploads/2020/06/a-4-1.png" alt="social" width="280" height="214" />
+                                </div>
+                                <div className="content-header">
+                                    <h3>DIRECT SHIPPING</h3>
+                                </div>
+                                <div className="content-description">
+                                We will automatically ship your orders directly to your customer
+                                </div>
+                            </div>
+                        </div>
+                        <div className="sign-up-click">
+                            <p><a href="/register">GET STARTED</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="main-page-section">
+                <div className="row">
+                    <div className="section-heading">
+                        <div>
+                            <h3>DROPSHIP</h3>
+                        </div>
+                    </div>
+                    <div className="video_wrapper">
+                        <iframe title="How 365Dropship Works" width="1140" height="641" src="https://www.youtube.com/embed/ig3CLaRdjk4?feature=oembed" frameBorder="0" allow="accelerometer" allowFullScreen ></iframe>
+                    </div>
+                </div>
+            </section>
+            <div className="footer-wrapper">
+                <Footer />
+            </div>
         </div>
     )
 }
