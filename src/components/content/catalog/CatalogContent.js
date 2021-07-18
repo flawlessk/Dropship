@@ -4,15 +4,28 @@ import Header from "../../header/Header";
 import Sort from "../../header/Sort";
 import Products from "../products/Products";
 
-const CatalogContent = () => {
+const CatalogContent = ({
+  checkboxChanged,
+  checkedProducts,
+  selectAll,
+  clearAll
+}) => {
 
   return (
     <section className="catalog__content">
       <div className="content__header-wrapper">
-          <Header />
+          <Header 
+            checkedProducts={checkedProducts}
+            checkboxChanged={checkboxChanged}
+            selectAll={selectAll}
+            clearAll={clearAll}
+          />
           <Sort />
       </div>
-      <Products />
+      <Products 
+        checkedProducts={checkedProducts}
+        checkboxChanged={checkboxChanged}
+      />
     </section>
   );
 };
