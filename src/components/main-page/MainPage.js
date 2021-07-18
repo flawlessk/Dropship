@@ -65,11 +65,11 @@ const MainPage = () => {
                         <h2>DISCOVER GLOBAL DROPSHIPPING PRODUCTS</h2>
                     </div>
                     <div>
-                        <h3>
+                        <h4 className="section-heading-title">
                             <span>
                                 <strong>PARTNER WITH THE MOST EXPERIENCED DROPSHIPPING TEAM IN THE INDUSTRY!</strong>
                             </span>
-                        </h3>
+                        </h4>
                     </div>
                 </div>
                 <div className="section-text">
