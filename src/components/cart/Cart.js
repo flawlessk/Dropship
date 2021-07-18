@@ -26,7 +26,7 @@ const Cart = () => {
     return (
         <>
             <div className="cart-wrapper">
-                {cartData.cartItem && cartData.cartItem.items.map((item) => (
+                {cartData?.cartItem && cartData.cartItem.items.map((item) => (
                 <Box className="product-box"
                 key={item.id}
             >
