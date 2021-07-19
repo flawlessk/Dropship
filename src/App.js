@@ -4,6 +4,7 @@ import Logout from './components/authentications/Logout';
 import RegisterModal from './components/authentications/RegisterModal';
 import Cart from './components/cart/Cart';
 import MainContent from './components/content/MainContent';
+import ProductValidation from './components/content/products/ProductValidation';
 import MainPage from './components/main-page/MainPage';
 import Nav from './components/navbar/Nav';
 
@@ -28,6 +29,7 @@ function App() {
         </Route>
         <Route path="/product/:productId?">
           <Nav />
+          <ProductValidation />
         </Route>
         <Route exact path="/cart">
           <Nav />

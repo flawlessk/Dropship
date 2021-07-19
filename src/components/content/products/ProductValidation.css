@@ -1,0 +1,11 @@
+.formikform {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: 200px;
+}
+.formik-header {
+    margin-left: 350px;
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
