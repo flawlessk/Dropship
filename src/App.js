@@ -40,19 +40,15 @@ function App() {
         </Route>
         <Route path="/dashboard">
           <Nav />
-          <h2>This is Dashboard Section</h2>
         </Route>
         <Route path="/transactions">
           <Nav />
-         <h2>This is Transactions Section</h2>
         </Route>
         <Route path="/orders">
           <Nav />
-          <h2>This is Orders Section</h2>
         </Route>
         <Route path="/store">
           <Nav />
-          <h2>This is Store Section</h2>
         </Route>
       </ Switch>
   );

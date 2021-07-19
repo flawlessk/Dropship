@@ -1,5 +1,4 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import "./Modal.css";
 
 const MODAL_STYLES = {
@@ -16,7 +15,6 @@ const MODAL_STYLES = {
 };
 
 const Modal = ({ open, onClose, products }) => {
-  const productList = useSelector(state => state.ProductsReducer.productList);
 
   if (!open) return null;
 
