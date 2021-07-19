@@ -62,3 +62,18 @@ export const removeFromCart = async (id) => {
     console.log(error)
   }
 }
+
+export const addProduct = async (data) => {
+  const results = await axios.post(WEB_URL_V1 + "products", data);
+  return results.data.data;
+}
+
+export const getProduct = async (id) => {
+  const results = await axios.get(WEB_URL_V1 + `products/${id}`);
+  return results.data.data;
+}
+
+export const updateProduct = async (id, data) => {
+  const results = await axios.put(WEB_URL_V1 + `products/${id}`, data);
+  return results.data.data;
+}
