@@ -2,11 +2,11 @@
     padding: 0;
     display: flex;
     flex-direction: row;
-  }
-  .content-left {
+}
+.content-left {
     width: 499px;
-  }
-  .price-list {
+}
+.price-list {
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -15,14 +15,14 @@
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
-  }
-  .price-list li strong {
+}
+.price-list li strong {
     font-size: 22px;
     color: #616161;
     font-weight: 500;
     padding-bottom: 2px;
-  }
-  .price-list li div {
+}
+.price-list li div {
     display: block;
     font-size: 14px;
     color: #707070;
@@ -31,37 +31,37 @@
     opacity: 0.7;
     text-transform: uppercase;
     padding-top: 2px;
-  }
-  .modal-slideshow {
+}
+.modal-slideshow {
     height: 485px;
     background-color: #fbfbfb;
     border-radius: 8px;
     margin-top: 40px;
-  }
-  .slideshow-image {
+}
+.slideshow-image {
     width: 335px;
     height: 335px;
     display: flex;
     align-items: center;
     position: relative;
     margin-left: 40px;
-  }
-  .modal-slideshow img {
+}
+.modal-slideshow img {
     width: 100%;
     height: 100%;
     padding: 30px;
-  }
+}
   .slideshow-pagination {
     width: 100%;
-  }
-  .pagination-ul {
+}
+.pagination-ul {
     display: flex;
     width: 100%;
     height: 94px;
     justify-content: space-evenly;
     margin-top: 56px;
-  }
-  .pagination-li {
+}
+.pagination-li {
     cursor: pointer;
     height: 100%;
     width: 94px;
@@ -71,30 +71,30 @@
     justify-content: center;
     align-items: center;
     background: #fff;
-  }
-  .pagination-img {
+}
+.pagination-img {
     width: 72px;
     height: 72px;
     object-fit: cover;
     background: #fff;
-  }
-  .content-right {
+}
+.content-right {
     width: 656px;
     min-height: 250px;
     display: flex;
     flex-direction: column;
     padding-left: 40px;
-  }
-  .description-header {
+}
+.description-header {
     display: flex;
     justify-content: space-between;
-  }
-  .description-header h3 {
+}
+.description-header h3 {
     font-size: 16px;
     line-height: 1.63;
     color: #707070;
-  }
-  .description-header button {
+}
+.description-header button {
     background: 0 0;
     border: none;
     font-size: 16px;
@@ -104,13 +104,13 @@
     margin-left: 5px;
     outline: 0;
     cursor: pointer;
-  }
-  .sku {
+}
+.sku {
     line-height: 1.63;
     color: rgba(112, 112, 112, 0.7);
     font-size: 16px;
-  }
-  .header-title {
+}
+.header-title {
     font-size: 22px;
     font-weight: 600;
     line-height: 1.09;
@@ -119,13 +119,13 @@
     margin-top: 10px;
     margin-bottom: 20px;
     word-wrap: break-word;
-  }
-  .header-btn {
+}
+.header-btn {
     margin-top: 20px;
     display: flex;
     justify-content: flex-end;
-  }
-  .header-btn--big {
+}
+.header-btn--big {
     width: 272px;
     height: 43px;
     border-radius: 4px;
@@ -137,35 +137,35 @@
     color: #fff;
     border: none;
     cursor: pointer;
-  }
-  .tabs {
+}
+.tabs {
     display: flex;
     height: 45px;
     border-bottom: 1px solid rgba(112, 112, 112, 0.25);
     margin-top: 30px;
-  }
-  .active-tab {
+}
+.active-tab {
     color: #616161;
     border-bottom: 1px solid #3b3b3b;
     font-size: 16px;
     font-weight: 600;
     margin-right: 68px;
-  }
-  .tab {
+}
+.tab {
     color: #b0b0b0;
     font-size: 16px;
     font-weight: 600;
-  }
-  .cont {
+}
+.cont {
     margin-top: 20px;
     border-radius: 4px;
-  }
-  .cont-order p {
+}
+.cont-order p {
     color: #b0b0b0;
     font-size: 16px;
     padding: 5px 0;
-  }
-  .main-div {
+}
+.main-div {
     width: 100%;
     height: 100%;
     background: rgba(0, 14, 70, 0.7) !important;
@@ -176,4 +176,11 @@
     right: 0;
     margin: auto;
     z-index: 1041;
-  }
+}
+.content-btn-close {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  width: 25px;
+  cursor: pointer;
+}

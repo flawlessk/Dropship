@@ -17,7 +17,6 @@ function App() {
         </Route>
         <Route path="/user/profile">
           <Nav />
-          <h2>this is user profile</h2>
           <Logout />
         </Route>
         <Route exact path="/">

@@ -22,7 +22,7 @@ const CatalogProduct = ({
     const openModal = (item) => {
         setActiveProduct(item);
         setIsOpen(true);
-        window.location = `/catalog/${item.id}`
+        history.push("/catalog/" + item.id)
       };
 
     useEffect(() => {

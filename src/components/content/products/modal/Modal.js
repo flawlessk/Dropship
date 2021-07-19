@@ -33,11 +33,11 @@ const Modal = ({ open, onClose, products }) => {
                     <div>RRP</div>
                   </li>
                   <li>
-                    <strong>$</strong>
+                    <strong>{products.price}</strong>
                     <div>COST</div>
                   </li>
                   <li>
-                    <strong>%</strong>
+                    <strong>{products.price}</strong>
                     <div>PROFIT</div>
                   </li>
                 </ul>
@@ -68,7 +68,7 @@ const Modal = ({ open, onClose, products }) => {
                     <button>US-Supplier103</button>
                   </h3>
                 </div>
-                <h2 className="header-title">title</h2>
+                <h2 className="header-title">{products.title}</h2>
                 <div className="header-btn">
                   <button className="header-btn--big">
                     Add To My Inventory
@@ -82,13 +82,13 @@ const Modal = ({ open, onClose, products }) => {
               <div className="cont">
                 <div className="cont-order">
                   <p>Backordered:</p>
-                  <p>Category: </p>
+                  <p>Category: {products.description}</p>
                   <p>Material:</p>
                   <p>Finish</p>
                   <p>Center Stone Type:</p>
                   <p>Center Stone Name: </p>
                   <p>Center Stone Color:</p>
-                  <p>Weight (approx):</p>
+                  <p>Weight (approx): {products.description}</p>
                 </div>
               </div>
             </div>
