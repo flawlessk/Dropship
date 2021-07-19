@@ -4,15 +4,26 @@ import { useSelector, useDispatch } from 'react-redux'
 import { productsAPI } from "../../../API";
 import { setProductsAction } from '../../../actions/ProductsActions';
 import SingleProduct from './SingleProduct';
+import { useHistory } from "react-router-dom";
+
 
 
 const CatalogProduct = ({
     checkedProducts,
-    checkboxChanged
+    checkboxChanged,
+    setActiveProduct,
+    setIsOpen
 }) => {
     const productList = useSelector(state => state.ProductsReducer.productList);
     const dispatch = useDispatch();
+    const history = useHistory();
 
+
+    const openModal = (item) => {
+        setActiveProduct(item);
+        setIsOpen(true);
+        window.location = `/catalog/${item.id}`
+      };
 
     useEffect(() => {
         productsAPI().then(result => {
@@ -33,6 +44,7 @@ const CatalogProduct = ({
                 item={item}
                 checkedProducts={checkedProducts}
                 checkboxChanged={checkboxChanged}
+                openModal={openModal}
                 />
             )
             }

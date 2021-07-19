@@ -9,8 +9,10 @@ const SingleProduct = ({
     id, 
     price, 
     description,
+    item,
     checkedProducts,
-    checkboxChanged  
+    checkboxChanged,
+    openModal
 }) => { 
 
     return (
@@ -40,7 +42,7 @@ const SingleProduct = ({
                              addToCart(id, 1)
                          }}
                          />
-                        <div className="products-image">
+                        <div className="products-image" onClick={() => openModal(item)}>
                             <img src={image} alt="img" />
                         </div>
                         <div className="products-info">

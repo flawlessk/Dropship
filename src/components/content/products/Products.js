@@ -10,6 +10,7 @@ const Products = ({
   checkboxChanged
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeProduct, setActiveProduct] = useState({});
   const history = useHistory();
 
   const onClose = () => {
@@ -17,16 +18,20 @@ const Products = ({
     setIsOpen(false);
   }
 
+
   return (
     <div className="content__products">
       <div id="products-wrapper">
         <CatalogProduct 
           checkedProducts={checkedProducts}
           checkboxChanged={checkboxChanged}
+          setActiveProduct={setActiveProduct}
+          setIsOpen={setIsOpen}
         />
         <Modal 
-            open={isOpen}
+            open={isOpen !== false}
             onClose={onClose}
+            products={activeProduct}
         />
       </div>
     </div>

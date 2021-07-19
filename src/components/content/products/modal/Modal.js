@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "./Modal.css";
 
 const MODAL_STYLES = {
@@ -14,8 +15,11 @@ const MODAL_STYLES = {
   borderRadius: "10px",
 };
 
-const Modal = ({ open, onClose }) => {
+const Modal = ({ open, onClose, products }) => {
+  const productList = useSelector(state => state.ProductsReducer.productList);
+
   if (!open) return null;
+
   return (
     <>
       <div className="main-div">
@@ -25,7 +29,7 @@ const Modal = ({ open, onClose }) => {
               <div className="left">
                 <ul className="price-list">
                   <li>
-                    <strong>$</strong>
+                    <strong>{products.price}</strong>
                     <div>RRP</div>
                   </li>
                   <li>
@@ -40,16 +44,16 @@ const Modal = ({ open, onClose }) => {
               </div>
               <div className="modal-slideshow">
                 <div className="slideshow-image">
-                  {/* <img src={products.imageUrl} alt="prod" /> */}
+                  <img src={products.imageUrl} alt="prod" />
                 </div>
                 <div className="slideshow-pagination">
                   <ul className="pagination-ul">
                     <li className="pagination-li">
-                      {/* <img
+                      <img
                         className="pagination-img"
                         src={products.imageUrl}
                         alt="produc"
-                      /> */}
+                      />
                     </li>
                   </ul>
                 </div>
