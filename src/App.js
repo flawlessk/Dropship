@@ -5,7 +5,7 @@ import RegisterModal from './components/authentications/RegisterModal';
 import Cart from './components/cart/Cart';
 import MainContent from './components/content/MainContent';
 import ProductValidation from './components/content/products/ProductValidation';
-import MainPage from './components/main-page/MainPage';
+import MainPage from './components/mainpage/MainPage';
 import Nav from './components/navbar/Nav';
 
 function App() {

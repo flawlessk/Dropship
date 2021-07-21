@@ -31,7 +31,7 @@ const Modal = ({ open, onClose, products }) => {
                     <div>RRP</div>
                   </li>
                   <li>
-                    <strong>{products.price}</strong>
+                    <strong>{products.price}$</strong>
                     <div>COST</div>
                   </li>
                   <li>
