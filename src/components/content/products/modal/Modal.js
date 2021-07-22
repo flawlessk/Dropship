@@ -1,21 +1,20 @@
-import React from "react";
-import "./Modal.css";
+import React from 'react';
+import './Modal.css';
 
 const MODAL_STYLES = {
-  position: "fixed",
-  top: "50%",
-  left: "50%",
-  width: "1163px",
-  height: "691px",
-  transform: "translate(-50%, -50%)",
-  backgroundColor: "#ffffff",
-  padding: "50px",
+  position: 'fixed',
+  top: '50%',
+  left: '50%',
+  width: '1163px',
+  height: '691px',
+  transform: 'translate(-50%, -50%)',
+  backgroundColor: '#ffffff',
+  padding: '50px',
   zIndex: 100,
-  borderRadius: "10px",
+  borderRadius: '10px',
 };
 
 const Modal = ({ open, onClose, products }) => {
-
   if (!open) return null;
 
   return (
@@ -102,5 +101,5 @@ const Modal = ({ open, onClose, products }) => {
       </div>
     </>
   );
-}
+};
 export default Modal;

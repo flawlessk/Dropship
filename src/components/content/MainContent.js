@@ -1,16 +1,13 @@
-import "./MainContent.css";
-import CatalogNav from "../catalogNav/CatalogNav"
-import CatalogContent from "./catalog/CatalogContent";
-import { useState } from "react";
-import { useSelector } from "react-redux";
-
-
+import './MainContent.css';
+import CatalogNav from '../catalogNav/CatalogNav';
+import CatalogContent from './catalog/CatalogContent';
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 const MainContent = () => {
   const [checkedProducts, setCheckedProducts] = useState([]);
-  const productList = useSelector(state => state.ProductsReducer.productList);
+  const productList = useSelector((state) => state.ProductsReducer.productList);
 
-  
   const checkboxChanged = (id) => {
     if (checkedProducts.includes(id)) {
       setCheckedProducts(checkedProducts.filter((i) => i !== id));
@@ -29,7 +26,7 @@ const MainContent = () => {
     <div className="main">
       <div className="main__catalog">
         <CatalogNav />
-        <CatalogContent 
+        <CatalogContent
           checkedProducts={checkedProducts}
           checkboxChanged={checkboxChanged}
           selectAll={selectAll}
@@ -38,5 +35,5 @@ const MainContent = () => {
       </div>
     </div>
   );
-}
+};
 export default MainContent;

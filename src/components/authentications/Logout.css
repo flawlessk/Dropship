@@ -1,14 +1,14 @@
 .logout {
-    margin-top: 30px;
-    margin-left: 100px;
-    background-color: #61d5df;
-    color: white;
-    display: inline-block;
-    border-radius: 4px;
-    cursor: pointer;
-    outline: 0;
-    padding: 10px;
-    font-size: 12px;
-    border: none;
-    font-weight: 600;
+  margin-top: 30px;
+  margin-left: 100px;
+  background-color: #61d5df;
+  color: white;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: 0;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+  font-weight: 600;
 }

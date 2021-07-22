@@ -1,42 +1,42 @@
 .Login {
-    margin: 20px 40px;
+  margin: 20px 40px;
 }
 .Login div {
-    padding: 10px;
+  padding: 10px;
 }
 .Login div input {
-    border-color: #61D5DF;
-    border-radius: 5px;
-    padding: 10px;
+  border-color: #61d5df;
+  border-radius: 5px;
+  padding: 10px;
 }
 .Login div {
-    padding: 10px;
+  padding: 10px;
 }
 .sign-up-btn {
-    line-height: 24px !important;
-    border-radius: 4px !important;
-    border: solid 2px #61d5df !important;
-    padding: 12px 16px;
-    color: #61d5df !important;
-    margin-top: 10px !important;
-    transition: all 0.5s;
-    padding-top: 15px;
-    cursor: pointer;
+  line-height: 24px !important;
+  border-radius: 4px !important;
+  border: solid 2px #61d5df !important;
+  padding: 12px 16px;
+  color: #61d5df !important;
+  margin-top: 10px !important;
+  transition: all 0.5s;
+  padding-top: 15px;
+  cursor: pointer;
 }
 .sign-up-btn:hover {
-    line-height: 24px !important;
-    border-radius: 4px !important;
-    border: solid 2px #61d5df !important;
-    padding: 12px 16px;
-    color: #fff !important;
-    margin-top: 10px !important;
-    transition: all 0.5s;
-    background-color: #61d5df !important;
+  line-height: 24px !important;
+  border-radius: 4px !important;
+  border: solid 2px #61d5df !important;
+  padding: 12px 16px;
+  color: #fff !important;
+  margin-top: 10px !important;
+  transition: all 0.5s;
+  background-color: #61d5df !important;
 }
 .dialog-regist {
-    margin: 20px 90px;
-    padding-top: 20px;
-    font-size: 25px;
-    color: #61D5DF;
-    font-weight: 700;
+  margin: 20px 90px;
+  padding-top: 20px;
+  font-size: 25px;
+  color: #61d5df;
+  font-weight: 700;
 }

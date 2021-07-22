@@ -1,7 +1,7 @@
-import Dropdown from "./Dropdown";
+import Dropdown from './Dropdown';
 
 const CatalogNav = () => {
-    return <Dropdown />;
-  };
-  
+  return <Dropdown />;
+};
+
 export default CatalogNav;

@@ -1,11 +1,11 @@
 .main {
-    flex: 1 1;
-    box-sizing: border-box;
-    height: 100%;
-    background-color: #f8f9fa;
-    padding-left: 54px;
-  }
-  .main__catalog {
-    display: flex;
-    height: 100vh;
-  }
+  flex: 1 1;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #f8f9fa;
+  padding-left: 54px;
+}
+.main__catalog {
+  display: flex;
+  height: 100vh;
+}

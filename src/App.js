@@ -11,46 +11,46 @@ import Nav from './components/navbar/Nav';
 function App() {
   return (
     <Switch>
-        <Route exact path="/catalog/:categoryParams?">
-          <Nav />
-          <MainContent />
-        </Route>
-        <Route path="/user/profile">
-          <Nav />
-          <Logout />
-        </Route>
-        <Route exact path="/">
-          <MainPage />
-        </Route>
-        <Route exact path="/login">
-          <Nav />
-          <LoginModal />
-        </Route>
-        <Route path="/product/:productId?">
-          <Nav />
-          <ProductValidation />
-        </Route>
-        <Route exact path="/cart">
-          <Nav />
-          <Cart />
-        </Route>
-        <Route exact path="/register">
-          <Nav />
-          <RegisterModal />
-        </Route>
-        <Route path="/dashboard">
-          <Nav />
-        </Route>
-        <Route path="/transactions">
-          <Nav />
-        </Route>
-        <Route path="/orders">
-          <Nav />
-        </Route>
-        <Route path="/store">
-          <Nav />
-        </Route>
-      </ Switch>
+      <Route exact path="/catalog/:categoryParams?">
+        <Nav />
+        <MainContent />
+      </Route>
+      <Route path="/user/profile">
+        <Nav />
+        <Logout />
+      </Route>
+      <Route exact path="/">
+        <MainPage />
+      </Route>
+      <Route exact path="/login">
+        <Nav />
+        <LoginModal />
+      </Route>
+      <Route path="/product/:productId?">
+        <Nav />
+        <ProductValidation />
+      </Route>
+      <Route exact path="/cart">
+        <Nav />
+        <Cart />
+      </Route>
+      <Route exact path="/register">
+        <Nav />
+        <RegisterModal />
+      </Route>
+      <Route path="/dashboard">
+        <Nav />
+      </Route>
+      <Route path="/transactions">
+        <Nav />
+      </Route>
+      <Route path="/orders">
+        <Nav />
+      </Route>
+      <Route path="/store">
+        <Nav />
+      </Route>
+    </Switch>
   );
 }
 
