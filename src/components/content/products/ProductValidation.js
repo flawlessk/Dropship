@@ -83,7 +83,7 @@ const ProductValidation = () => {
                 name="imageUrl"
                 />
                 <ErrorMessage name="imageUrl" component="div" />
-                <input type="submit" value={productId ? "Save" : "Update"}/>
+                <input type="submit" value={productId ? "Save" : "Update"} className="formik-btn" />
             </Form>
         </Formik>
     </>

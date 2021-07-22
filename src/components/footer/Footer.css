@@ -25,6 +25,9 @@
 .main-info li a {
     color: #fff;
 }
+.main-info li a:hover {
+    color: #61d5df;
+}
 .main-info li {
     padding-bottom: 5px;
 

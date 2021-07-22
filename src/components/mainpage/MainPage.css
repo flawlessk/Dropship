@@ -64,7 +64,10 @@
     background-color: #61d5df !important;
 }
 .log-in-btn {
-    color: #61d5df !important;
+    color: #61d5df;
+}
+.log-in-btn:hover {
+  color: #fff;
 }
 .share-links {
     padding-top: 20px;

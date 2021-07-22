@@ -8,4 +8,24 @@
     margin-left: 350px;
     margin-top: 200px;
     margin-bottom: 30px;
+    font-size: 25px;
+}
+.formikform input {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #61d5df;
+    border: none;
+}
+.formikform textarea {
+    margin-bottom: 10px;
+    background-color: #61d5df;
+    border: none;
+}
+.formik-btn {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+.formik-btn:hover {
+    color: #fff;
 }
