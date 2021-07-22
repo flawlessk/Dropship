@@ -2,6 +2,7 @@ import "./Header.css";
 import HeaderBtn from "./Header-btn";
 import Search from "./Search";
 import { useSelector } from "react-redux";
+import { addToCart } from "../../API";
 
 const Header = ({
   checkedProducts,
@@ -9,6 +10,14 @@ const Header = ({
   clearAll
 }) => {
   const productList = useSelector(state => state.ProductsReducer.productList);
+  
+  const addToInventory = () => {
+    checkedProducts.forEach(id => {
+      addToCart(id, 1);
+    });
+  }
+
+  
 
   return (
     <header className="content__header">
@@ -25,7 +34,7 @@ const Header = ({
           <Search />
       </div>
       <div className="right-buttons">
-        <HeaderBtn name="ADD TO INVENTORY"/>
+        <HeaderBtn name="ADD TO INVENTORY" onClick={addToInventory} />
         <span className="side-help">
           <button className="help-btn">?</button>
         </span>

@@ -14,12 +14,11 @@ const SingleProduct = ({
     checkboxChanged,
     openModal
 }) => { 
-
     return (
         <Box className="product-box"
             key={id}
             >
-                <Box item xs={3} 
+                <Box xs={3} 
                  className={`${checkedProducts && checkedProducts.includes(id)
                     ? " products__item--input--highlited"
                     : "products-item"

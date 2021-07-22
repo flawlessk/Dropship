@@ -12,6 +12,10 @@ const Register = () => {
 
     const history = useHistory();
 
+    const registered = () => {
+        history.push("/login");
+    }
+    
     const performRegister = (e) => {
         e.preventDefault();
         register(firstName, lastName, email, password, passwordConfirmation)
@@ -23,9 +27,7 @@ const Register = () => {
         })
     }
     
-    const registered = () => {
-        history.push("/login");
-    }
+    
 
     return(
         <form className="Register" onSubmit={performRegister}>
