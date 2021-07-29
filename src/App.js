@@ -32,6 +32,19 @@ function App() {
       </Route>
       <Route exact path="/cart">
         <Nav />
+        <h2
+          className="cart-heading"
+          style={{
+            fontSize: '40px',
+            textAlign: 'center',
+            margin: '20px 0',
+            paddingBottom: '21px',
+            borderBottom: '1px solid gray',
+            color: '#61d5df',
+          }}
+        >
+          This is an inventory section!
+        </h2>
         <Cart />
       </Route>
       <Route exact path="/register">
