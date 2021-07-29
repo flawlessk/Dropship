@@ -1,4 +1,4 @@
-import { ActionTypes } from '../actions/actionTypes';
+import { ActionTypes } from '../action-types/actionTypes';
 
 const initialState = {
   productList: [],
@@ -23,6 +23,22 @@ const ProductsReducer = (state = initialState, action) => {
       return {
         ...state,
         search: action.payload,
+      };
+    case ActionTypes.COUNTER_INCREASED:
+      return {
+        ...state,
+        productList: state.productList.map((x) =>
+          x.id === action.payload ? { ...x, count: x.count + 1 } : x
+        ),
+      };
+    case ActionTypes.COUNTER_DECREASED:
+      return {
+        ...state,
+        productList: state.productList.map((x) =>
+          x.id === action.payload
+            ? { ...x, count: x.count === 1 ? 1 : x.count - 1 }
+            : x
+        ),
       };
     default:
       return state;
