@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { productsAPI } from '../../API';
-import { setProducts, sortAction } from '../../redux/actions/actionTypes';
+import { setProducts, sortAction } from '../../redux/action-types/actionTypes';
 import './Sort.css';
 
 const Sort = () => {
