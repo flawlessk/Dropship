@@ -12,3 +12,6 @@
   border: none;
   font-weight: 600;
 }
+.logout:hover {
+  background-color: red;
+}
