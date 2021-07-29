@@ -17,6 +17,18 @@ function App() {
       </Route>
       <Route path="/user/profile">
         <Nav />
+        <h2
+          style={{
+            fontSize: '40px',
+            textAlign: 'center',
+            margin: '20px 0',
+            paddingBottom: '21px',
+            borderBottom: '1px solid gray',
+            color: '#61d5df',
+          }}
+        >
+          This is user profile section!
+        </h2>
         <Logout />
       </Route>
       <Route exact path="/">
@@ -33,7 +45,6 @@ function App() {
       <Route exact path="/cart">
         <Nav />
         <h2
-          className="cart-heading"
           style={{
             fontSize: '40px',
             textAlign: 'center',
