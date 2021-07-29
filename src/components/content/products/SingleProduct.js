@@ -3,6 +3,7 @@ import { Paper, Box, Snackbar } from '@material-ui/core';
 import MuiAlert from '@material-ui/lab/Alert';
 import { addToCart } from '../../../API';
 import { useState } from 'react';
+import Counter from './counter/Counter';
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -18,9 +19,9 @@ const SingleProduct = ({
   checkedProducts,
   checkboxChanged,
   openModal,
+  count,
 }) => {
   const [open, setOpen] = useState(false);
-
   const handleClick = () => {
     setOpen(true);
   };
@@ -34,7 +35,7 @@ const SingleProduct = ({
   };
 
   const onClickCombined = () => {
-    addToCart(id, 1);
+    addToCart(id, count);
     handleClick();
   };
 
@@ -56,6 +57,9 @@ const SingleProduct = ({
             checked={checkedProducts && checkedProducts.includes(id)}
             onChange={() => checkboxChanged(id)}
           />
+        </div>
+        <div>
+          <Counter productId={id} count={count} />
         </div>
         <Paper className="products-paper">
           <input
