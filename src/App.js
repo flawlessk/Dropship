@@ -27,7 +27,7 @@ function App() {
             color: '#61d5df',
           }}
         >
-          This is user profile section!
+          User Profile
         </h2>
         <Logout />
       </Route>
@@ -54,7 +54,7 @@ function App() {
             color: '#61d5df',
           }}
         >
-          This is an inventory section!
+          Inventory
         </h2>
         <Cart />
       </Route>

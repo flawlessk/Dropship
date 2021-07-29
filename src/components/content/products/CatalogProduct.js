@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { Grid } from '@material-ui/core';
 import { useSelector, useDispatch } from 'react-redux';
 import { productsAPI } from '../../../API';
-import { setProductsAction } from '../../../actions/ProductsActions';
 import SingleProduct from './SingleProduct';
 import { useHistory } from 'react-router-dom';
+import { setProducts } from '../../../redux/action-types/actionTypes';
 
 const CatalogProduct = ({
   checkedProducts,
@@ -24,7 +24,7 @@ const CatalogProduct = ({
 
   useEffect(() => {
     productsAPI().then((result) => {
-      dispatch(setProductsAction(result));
+      dispatch(setProducts(result));
     });
   }, [dispatch]);
 
@@ -33,6 +33,7 @@ const CatalogProduct = ({
       {productList &&
         productList.map((item) => (
           <SingleProduct
+            count={item.count}
             key={item.id}
             id={item.id}
             image={item.imageUrl}

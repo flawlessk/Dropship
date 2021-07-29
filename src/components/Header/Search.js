@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { searchAction } from '../../redux/actions/actionTypes';
+import { searchAction } from '../../redux/action-types/actionTypes';
 import './Search.css';
 
 const Search = () => {
