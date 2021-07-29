@@ -6,14 +6,14 @@ const Plus = ({ productId }) => {
   const dispatch = useDispatch();
 
   return (
-    <input
-      type="button"
+    <button
       className="plus"
-      value="+"
       onClick={() => {
         dispatch(increaseCounter(productId));
       }}
-    />
+    >
+      +
+    </button>
   );
 };
 

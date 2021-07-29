@@ -6,7 +6,7 @@ const Counter = ({ count, productId }) => {
   return (
     <div className="counter-wrapper">
       <Minus productId={productId} />
-      <p>{count}</p>
+      <p className="count">{count}</p>
       <Plus productId={productId} />
     </div>
   );

@@ -3,9 +3,32 @@
   justify-content: center;
   padding: 10px;
 }
+.count {
+  font-weight: 700;
+}
 .minus {
   padding: 2px 10px 2px 10px;
+  outline: 0;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  margin-right: 3px;
+}
+.minus:hover {
+  background-color: red;
+  color: #fff;
+  border-radius: 10%;
 }
 .plus {
   padding: 2px 10px 2px 10px;
+  outline: 0;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  margin-left: 3px;
+}
+.plus:hover {
+  background-color: green;
+  color: #fff;
+  border-radius: 10%;
 }

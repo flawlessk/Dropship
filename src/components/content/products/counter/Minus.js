@@ -6,14 +6,14 @@ const Minus = ({ productId }) => {
   const dispatch = useDispatch();
 
   return (
-    <input
-      type="button"
+    <button
       className="minus"
-      value="-"
       onClick={() => {
         dispatch(decreaseCounter(productId));
       }}
-    />
+    >
+      -
+    </button>
   );
 };
 
