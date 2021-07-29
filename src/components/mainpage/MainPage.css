@@ -96,6 +96,7 @@
   transform: translate(0px, 0px);
   visibility: visible;
   padding: 50px 0;
+  font-family: 'Roboto';
 }
 .wrapper-content img {
   width: 143px;

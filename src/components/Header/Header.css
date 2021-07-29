@@ -17,12 +17,14 @@
   font-size: 12px;
   border: none;
   font-weight: 600;
+  font-family: 'Roboto';
 }
 .content__header-title {
   font-size: 12px;
   font-weight: bold;
   padding-left: 25px;
   padding-right: 12px;
+  font-family: 'Roboto';
 }
 .content__header-btn--big {
   height: 40px;
