@@ -1,6 +1,12 @@
 import './SingleProduct.css';
-import { Paper, Box } from '@material-ui/core';
+import { Paper, Box, Snackbar } from '@material-ui/core';
+import MuiAlert from '@material-ui/lab/Alert';
 import { addToCart } from '../../../API';
+import { useState } from 'react';
+
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
 
 const SingleProduct = ({
   image,
@@ -13,6 +19,25 @@ const SingleProduct = ({
   checkboxChanged,
   openModal,
 }) => {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const onClickCombined = () => {
+    addToCart(id, 1);
+    handleClick();
+  };
+
   return (
     <Box className="product-box" key={id}>
       <Box
@@ -37,9 +62,7 @@ const SingleProduct = ({
             type="button"
             className="hidden-btn"
             value="Add To Cart"
-            onClick={() => {
-              addToCart(id, 1);
-            }}
+            onClick={onClickCombined}
           />
           <div className="products-image" onClick={() => openModal(item)}>
             <img src={image} alt="img" />
@@ -57,6 +80,16 @@ const SingleProduct = ({
           <div className="products-price">
             <span>COST {price} $ </span>
           </div>
+          <Snackbar
+            open={open}
+            autoHideDuration={800}
+            onClose={handleClose}
+            anchorOrigin={{ horizontal: 'left', vertical: 'bottom' }}
+          >
+            <Alert onClose={handleClose} severity="success">
+              Product added to inventory successfully
+            </Alert>
+          </Snackbar>
         </Paper>
       </Box>
     </Box>

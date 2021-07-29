@@ -1,10 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import './Cart.css';
 import { cart, removeFromCart } from '../../API';
-import { Paper, Box } from '@material-ui/core';
+import { Paper, Box, Snackbar } from '@material-ui/core';
+import MuiAlert from '@material-ui/lab/Alert';
+
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
 
 const Cart = () => {
   const [cartData, setCartData] = useState({});
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
 
   useEffect(() => {
     cart().then((res) => {
@@ -20,6 +38,7 @@ const Cart = () => {
       cartItems.splice(idx, 1);
       setCartData(cart);
     });
+    handleClick();
   };
 
   return (
@@ -46,7 +65,7 @@ const Cart = () => {
                     <div className="products-title">
                       <h3>{item.title}</h3>
                       <p>{item.description}</p>
-                      <p>Quantity: {item.qty}</p>
+                      <p className="qty">Quantity: {item.qty}</p>
                     </div>
                     <h3 className="products-supplier">
                       <span>By:</span>
@@ -57,6 +76,16 @@ const Cart = () => {
                     <span>COST {item.price}$ </span>
                   </div>
                 </Paper>
+                <Snackbar
+                  open={open}
+                  autoHideDuration={800}
+                  onClose={handleClose}
+                  anchorOrigin={{ horizontal: 'left', vertical: 'bottom' }}
+                >
+                  <Alert onClose={handleClose} severity="error">
+                    Product was deleted successfully!!!
+                  </Alert>
+                </Snackbar>
               </Box>
             </Box>
           ))}
