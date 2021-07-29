@@ -14,7 +14,7 @@
 .form-text {
   height: 52px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.73;
   color: #fff;
   padding-left: 20px;
@@ -24,6 +24,7 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  font-family: 'Roboto';
 }
 .dd-list {
   height: 150px;
@@ -51,12 +52,13 @@
   background-color: #9da9d5;
   height: 52px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.73;
   color: #fff;
   padding-left: 20px;
   padding-top: 13px;
   position: relative;
+  font-family: 'Roboto';
 }
 .sortdown-first {
   margin-left: 74px;
