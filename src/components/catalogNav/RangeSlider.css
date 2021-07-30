@@ -63,7 +63,7 @@
   transform: translateX(-1px);
   border-radius: 0 2px 2px 0;
   padding: 5px 14px;
-  margin-left: 120px;
+  margin-left: 80px;
 }
 .slider-price-right {
   width: 19px;
@@ -74,7 +74,7 @@
   justify-content: center;
   position: absolute;
   transform: translateX(calc(-100% + -1px));
-  right: 51px;
+  right: 91px;
   top: 225px;
   color: rgba(101, 115, 126, 0.5);
   border-radius: 2px 0 0 2px;
