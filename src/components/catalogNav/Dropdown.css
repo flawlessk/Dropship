@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   border: 1px solid #dde3ee;
+  box-sizing: border-box;
 }
 .catalog__nav-form {
   height: 104px;

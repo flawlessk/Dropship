@@ -1,4 +1,6 @@
 .catalog__content {
+  display: flex;
+  flex-direction: column;
   flex: 1 1;
   height: 100%;
   width: 100%;
@@ -7,4 +9,5 @@
   height: 120px;
   width: 100%;
   border-bottom: 2px solid #dbe0f3;
+  flex: 0 0 auto;
 }
