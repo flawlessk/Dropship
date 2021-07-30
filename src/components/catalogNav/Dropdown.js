@@ -2,6 +2,7 @@ import React from 'react';
 import './Dropdown.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSortDown } from '@fortawesome/free-solid-svg-icons';
+import RangeSlider from './RangeSlider';
 
 const Dropdown = () => {
   return (
@@ -20,6 +21,7 @@ const Dropdown = () => {
           </span>
         </div>
       </div>
+      <RangeSlider />
     </nav>
   );
 };
