@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Login.css';
 import { useHistory } from 'react-router';
 import { login } from '../../API';
+import HeaderBtn from '../header/Header-btn';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -32,16 +33,16 @@ const Login = () => {
 
   return (
     <form className="Login" onSubmit={performLogIn}>
-      <div>
+      <div className="login-email">
         <input
           type="email"
           name="email"
-          placeholder="email"
+          placeholder="E-mail"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
-      <div>
+      <div className="login-password">
         <input
           type="password"
           name="password"
@@ -50,8 +51,20 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <div>
-        <input type="submit" value="Log In" className="sign-up-btn" />
+      <div className="signup-wrapper">
+        <a href="/register">Forgot password?</a>
+        <button className="login-button">Log In</button>
+      </div>
+      <div className="social-auths">
+        <h4 className="auths-title">Or Log In with</h4>
+        <div className="auths-buttons">
+          <button className="google-btn"></button>
+          <button className="facebook-btn"></button>
+        </div>
+      </div>
+      <div className="auth-getstart">
+        <span>Don't have an account?</span>
+        <a href="/register">Sign up</a>
       </div>
     </form>
   );

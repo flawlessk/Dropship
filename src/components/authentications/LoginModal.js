@@ -7,13 +7,21 @@ const LoginModal = () => {
   const [open, setOpen] = useState(true);
 
   return (
-    <div>
+    <div className="dialog-wrapper">
       <Dialog
         open={open}
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
       >
-        <h2 className="dialog-regist">Log In</h2>
+        <div className="heading-wrapper">
+          <div className="dialog-logo">
+            <img
+              src="https://app.365dropship.com/assets/images/auth/logo.svg"
+              alt="loginlogo"
+            />
+          </div>
+          <h2 className="dialog-regist">Members Log In</h2>
+        </div>
         <Login />
       </Dialog>
     </div>
