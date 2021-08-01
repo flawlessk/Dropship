@@ -1,11 +1,47 @@
 .Register {
   margin: 20px 40px;
 }
-.Register div {
+.register-email {
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid rgba(59, 59, 59, 0.2);
+  margin-bottom: 20px;
   padding: 10px;
 }
-.Register div input {
-  border-color: #61d5df;
-  border-radius: 5px;
-  padding: 10px;
+.register-email input {
+  border: none;
+  outline: 0;
+  color: #3a415d;
+  padding: 5px 0 0 10px;
+  font-family: 'roboto';
+  background: #fff !important;
+}
+.term {
+  position: relative;
+  font-family: 'roboto';
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(59, 59, 59, 0.5);
+}
+.subscription {
+  font-family: 'roboto';
+  font-size: 14px;
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscription input {
+  border-radius: 3px;
+  outline: 0;
+  border: 1px solid #d3d4dc;
+  margin: 0 5px 2px 0;
+}
+.subscription label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: rgba(59, 59, 59, 0.5);
 }

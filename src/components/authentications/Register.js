@@ -29,7 +29,7 @@ const Register = () => {
 
   return (
     <form className="Register" onSubmit={performRegister}>
-      <div>
+      <div className="register-email">
         <input
           type="text"
           name="firstname"
@@ -39,7 +39,7 @@ const Register = () => {
           required
         />
       </div>
-      <div>
+      <div className="register-email">
         <input
           type="text"
           name="lastname"
@@ -49,7 +49,7 @@ const Register = () => {
           required
         />
       </div>
-      <div>
+      <div className="register-email">
         <input
           type="email"
           name="email"
@@ -59,7 +59,7 @@ const Register = () => {
           required
         />
       </div>
-      <div>
+      <div className="register-email">
         <input
           type="password"
           name="password"
@@ -69,7 +69,7 @@ const Register = () => {
           required
         />
       </div>
-      <div>
+      <div className="register-email">
         <input
           type="Password"
           name="ConfirmPassword"
@@ -79,8 +79,25 @@ const Register = () => {
           required
         />
       </div>
-      <div>
-        <input type="submit" value="Register" className="sign-up-btn" />
+      <div className="term">
+        By creating an account, you agree with the Terms and Conditions and
+        Privacy Policy
+      </div>
+      <div className="subscription">
+        <input type="checkbox" />
+        <label for="newsletters">Subscribe to Newsletter</label>
+      </div>
+      <button className="login-button">Sign Up</button>
+      <div className="social-auths">
+        <h4 className="auths-title">Or Sign In with</h4>
+        <div className="auths-buttons">
+          <button className="google-btn"></button>
+          <button className="facebook-btn"></button>
+        </div>
+      </div>
+      <div className="auth-getstart">
+        <span>Already have an account?</span>
+        <a href="/login">Sign In</a>
       </div>
     </form>
   );
