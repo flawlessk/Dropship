@@ -1,3 +1,6 @@
 body {
   background-color: gray;
 }
+.MuiInputBase-input {
+  text-overflow: ellipsis;
+}
