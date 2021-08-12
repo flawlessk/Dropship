@@ -7,7 +7,6 @@ import Popper from '@material-ui/core/Popper';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
-import { makeStyles } from '@material-ui/core/styles';
 import Email from '../../svgs/email.svg';
 import Link from '../../svgs/link.svg';
 import Share from '../../svgs/share.svg';

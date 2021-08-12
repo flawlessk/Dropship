@@ -8,6 +8,7 @@ import ProductValidation from './components/content/products/ProductValidation';
 import MainPage from './components/mainpage/MainPage';
 import Nav from './components/navbar/Nav';
 import Test from './components/test/Test';
+import Onboarding from './components/test2/Onboarding';
 
 function App() {
   return (
@@ -71,6 +72,7 @@ function App() {
       </Route>
       <Route path="/orders">
         <Test />
+        <Onboarding />
       </Route>
       <Route path="/store">
         <Nav />
