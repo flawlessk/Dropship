@@ -8,7 +8,7 @@ import ProductValidation from './components/content/products/ProductValidation';
 import MainPage from './components/mainpage/MainPage';
 import Nav from './components/navbar/Nav';
 import Test from './components/test/Test';
-import Onboarding from './components/test2/Onboarding';
+import Stepper from './components/test2/Stepper';
 
 function App() {
   return (
@@ -71,11 +71,12 @@ function App() {
         <Nav />
       </Route>
       <Route path="/orders">
-        <Test />
-        <Onboarding />
+        <div style={{ display: 'flex' }}>
+          <Test />
+        </div>
       </Route>
       <Route path="/store">
-        <Nav />
+        <Stepper />
       </Route>
     </Switch>
   );
