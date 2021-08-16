@@ -9,6 +9,7 @@ import MainPage from './components/mainpage/MainPage';
 import Nav from './components/navbar/Nav';
 import Test from './components/test/Test';
 import Stepper from './components/test2/Stepper';
+import Walkthrough from './components/test2/Walkthrough';
 
 function App() {
   return (
@@ -77,6 +78,7 @@ function App() {
       </Route>
       <Route path="/store">
         <Stepper />
+        <Walkthrough />
       </Route>
     </Switch>
   );

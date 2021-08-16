@@ -38,7 +38,6 @@ export default function Some() {
 
   const [activeStep, setActiveStep] = React.useState(0);
   const classes = useStyles();
-  console.log(activeStep);
   const maxSteps = steps.length;
 
   const handleNext = () => {
