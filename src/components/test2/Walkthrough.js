@@ -16,7 +16,7 @@ import Right from "../../svgs/right.svg";
 
 
 
-
+// Data
 const steps = [
     {
       imgPath: X,
@@ -132,7 +132,6 @@ const Walkthrough = () => {
                             {steps[activeStep].text5}
                           </Box>
                         </Typography>
-
                     </DialogContent>
                     <MobileStepper
                         variant="dots"
