@@ -20,6 +20,8 @@ export default makeStyles((theme) => {
               borderTopLeftRadius: "12px",
               color: "#ffffff",
               padding: "28px 28px 28px 36px",
+              alignItems: "center",
+              fontSize: "18px"
           },
           imgX: {
               width: "24px",
@@ -45,7 +47,7 @@ export default makeStyles((theme) => {
             fontSize: "14px",
             lineHeight: "1.71",
             textAlign: "left",
-            margin: "0 32px 40px 32px",
+            margin: "0 32px 0 32px",
           },
           press: {
               width: "20x",
@@ -74,7 +76,6 @@ export default makeStyles((theme) => {
             },
           },
           btnNext: {
-              padding: 0,
               minWidth: 0,
               width: "32px",
               height: "32px",
@@ -102,12 +103,29 @@ export default makeStyles((theme) => {
             padding: 0,
           },
           bold: {
-            marginLeft: "32px"
+            marginLeft: "32px",
+            marginBottom: "20px"
           },
           underline: {
             display: "inline-block",
             textDecoration: "underline",
             color: "black"
+          },
+          flex: {
+            display: "flex",
+            alignItems: "center"
+          },
+          flex1: {
+            display: "flex",
+            alignItems: "center",
+            marginBottom: "16px"
+          },
+          marginLeft: {
+            marginLeft: "12px",
+            marginRight: "4px"
+          },
+          marginRight: {
+            marginRight: "12px"
           }
     }
 })

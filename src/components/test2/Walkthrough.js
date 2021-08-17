@@ -16,7 +16,6 @@ import Right from "../../svgs/right.svg";
 
 
 
-// Data
 const steps = [
     {
       imgPath: X,
@@ -97,7 +96,7 @@ const Walkthrough = () => {
                    },
                  }}
                 >
-                    <DialogTitle className={classes.dialogTitle}>
+                    <DialogTitle className={classes.dialogTitle} disableTypography>
                         {steps[activeStep].title}
                         <img src={steps[activeStep].imgPath} alt={steps[activeStep].title} className={classes.imgX} onClick={handleClose} />
                     </DialogTitle>
@@ -110,17 +109,17 @@ const Walkthrough = () => {
                         )}
                         <Typography className={classes.text2}>
                             {activeStep === 0 && (
-                              <Box>
+                              <Box className={classes.flex}>
                                 {steps[activeStep].contentText}
                                 <img src={steps[activeStep].imgPress} alt="bla" className={classes.press} />
                                 {steps[activeStep].contentText2}
                               </Box>
                             )}
                             {activeStep === 1 && (
-                              <Box>
+                              <Box className={classes.flex1}>
                                 {steps.[activeStep].text2}
-                                <img src={steps[activeStep].left} alt="left" />
-                                <img src={steps[activeStep].right} alt="left" />
+                                <img src={steps[activeStep].left} alt="left" className={classes.marginLeft} />
+                                <img src={steps[activeStep].right} alt="right" className={classes.marginRight}/>
                                 {steps[activeStep].text3}
                               </Box>
                             )}
