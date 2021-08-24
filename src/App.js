@@ -72,13 +72,19 @@ function App() {
         <Nav />
       </Route>
       <Route path="/orders">
-        <div style={{ display: 'flex' }}>
+        <Nav />
+        <div style={{ display: 'flex', marginLeft: "100px" }}>
           <Test />
         </div>
       </Route>
       <Route path="/store">
-        <Stepper />
-        <Walkthrough />
+        <Nav />
+        <div style={{marginLeft: "100px"}}>
+          <Stepper />
+        </div>
+        <div style={{marginLeft: "100px"}}>
+         <Walkthrough />
+        </div>
       </Route>
     </Switch>
   );

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Login.css';
 import { useHistory } from 'react-router';
 import { login } from '../../API';
-import HeaderBtn from '../header/Header-btn';
 
 const Login = () => {
   const [email, setEmail] = useState('');
