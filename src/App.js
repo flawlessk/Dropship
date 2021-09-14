@@ -5,6 +5,7 @@ import RegisterModal from './components/authentications/RegisterModal';
 import Cart from './components/cart/Cart';
 import MainContent from './components/content/MainContent';
 import ProductValidation from './components/content/products/ProductValidation';
+import SwipeableTemporaryDrawer from './components/drawer/SwipeableTemporaryDrawer';
 import MainPage from './components/mainpage/MainPage';
 import Nav from './components/navbar/Nav';
 import Test from './components/test/Test';
@@ -83,7 +84,10 @@ function App() {
           <Stepper />
         </div>
         <div style={{marginLeft: "100px"}}>
-         <Walkthrough />
+          <Walkthrough />
+        </div>
+        <div style={{marginLeft: "100px", marginTop: 50}}>
+          <SwipeableTemporaryDrawer />
         </div>
       </Route>
     </Switch>
